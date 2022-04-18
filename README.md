@@ -1,2 +1,5 @@
 # Clone-Netflix
-Desafio Bootcamp Digital Innovation One - Criar clone da página inicial da Netflix
+Desafio Bootcamp Digital Innovation One 
+- Neste desafio, recriei a interface da Netflix. 
+
+
