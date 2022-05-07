@@ -1,7 +1,7 @@
 # TeleMovies
-Desafio Bootcamp Impulso Fullstack Web Developer da Digital Innovation One.
-- Neste desafio, recriei a interface do Netflix, utilizando HTML/CSS/Jquery - <b>Em finalização</b>. 
+<p>Desafio Bootcamp Impulso Fullstack Web Developer da Digital Innovation One.</p>
+<p>- Neste desafio, recriei a interface do Netflix, utilizando HTML/CSS/Jquery - <strong>Em finalização</strong>. </p>
 
 <br>
 
-Link: https://guisant.github.io/TeleMovies/
+<p>Link: https://guisant.github.io/TeleMovies/</p>
