@@ -1,146 +1,139 @@
 
-:root{
+:root {
     --vermelho: #950101;
     --preto: #000000;
 }
 
-*{
-    margin: 0px;
-    padding: 0px;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-/* ELEMENTOS-BASE */
-
-body{
+body {
     background: var(--preto);
     font-family: 'Staatliches', cursive;
     color: white;
 }
 
 
-/* NAVEGAÇAO */
+/* navbar */
 
-#nav .brand-logo{
-    color: var(--vermelho);
-    font-family: 'Arial';
-    font-size: 40px;
-    font-weight: 600;
-    margin-left: 20px;
-}
-
-#nav .nav-wrapper{
-    position: relative;
-    width: 100%;
-}
-
-#nav{
+#navbar {
     width: 100%;
     background-color: var(--preto);
 }
 
-#nav ul{
+#navbar .brand-logo {
+    color: var(--vermelho);
+    font-family: 'Arial';
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-left: 1.25rem;
+}
+
+#navbar .navbar--wrapper {
+    position: relative;
+    width: 100%;
+}
+
+#navbar ul{
     list-style: none;
     display: flex;
 }
 
-#nav li{
+#navbar li{
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#nav ul li a{
+#navbar ul li a{
     text-decoration: none;
     color: white;
     transition: all 0.4s;
 }
 
-#nav.fixed{
-    position: fixed;
-    box-shadow: 5px 5px 19px 0px rgba(0, 0, 0, 0.7);
-}
 
+/* mainMovie */
 
-/* FILME-PRINCIPAL */
-
-.filme-principal{
-    font-size: 16px;
+.mainMovie {
+    font-size: 1rem;
     background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)), url('../img/capa-batman.jpg');
 
-    height: 600px;
+    height: 37.5rem;
     background-size: cover; 
     
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start; 
-    margin: 0px;
 }
 
-.filme-principal .container{
+.mainMovie__container {
     width: 70%;
-    margin-left: 40px;
+    margin-left: 2.5rem;
 }
 
-.filme-principal .descricao{
-    width: 80%;
-    margin-bottom: 40px;
-    margin-top: 5px;
-}
-
-.filme-principal .titulo{
-    font-size: 80px;
+.mainMovie__title {
+    font-size: 5rem;
     font-family: 'Bebas Neue', cursive;
     margin-top: 18%;
-    margin-bottom: 0%;
 }
 
-.botao{
+.mainMovie__description {
+    width: 44%;
+    margin-bottom: 2.5rem;
+    margin-top: 0.313rem;
+}
+
+.mainMovie__button .btn {
     background-color: rgba(0,0,0,.50);
     border: none;
     color: white;
 
-    padding: 15px 40px;
-    margin-right: 15px;
-    font-size: 14px;
+    margin-right: 0.938rem;
+    font-size: 0.875rem;
 
     cursor: pointer;
     transition: .4s ease all;
 }
 
-.botao:hover{
+.mainMovie__button .btn:hover {
     background-color: white;
     color: #000000;
 }
 
-.botao i{
-    margin-right: 8px;
+.mainMovie__button .btn i {
+    font-size: 0.938rem;
+    margin-right: 0.5rem;
 }
 
 
-/* CARROSSEL */
+/* carousel */
 
-.carrosel-filmes h2{
-    font-size: 25px;
-    margin: 15px 0px 10px 40px;
+.carouselNews h2, .carouselOnHigh h2 {
+    font-size: 1.563rem;
+    margin: 0.938rem 0 0.625rem 2.5rem;
 
 }
 
-.box-filme{
+.box__movie {
     width: 100%;
     height: 100%;
     display: block;
 }
 
 
-/* RODAPE */
+/* footer */
 
-footer{
+footer {
     position: absolute;
     width: 100%;
-    height: 100px;    
+    height: 6.25rem;    
+    margin-top: 2rem;
+
     text-align: center;
-    line-height: 100px;
+    line-height: 8.25rem;
 }
