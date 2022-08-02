@@ -8,12 +8,13 @@
     <link rel="stylesheet" type="text/css" href="style/main.css">
     <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/icon.png" />
 
     <!--owl css-->
     <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
     <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
 
-    <!--responsividade-->
+    <!--responsive-->
     <link rel="stylesheet" href="style/responsive.css">
 
 
@@ -22,26 +23,17 @@
 <body>
 
     <header>
-        <nav id="navbar">
-            <div class="navbar--wrapper">
-                <a href="#" class="brand-logo">TeleMovies</a>
-                <a href="#" data-activates="menu-mobile" class="button-collapse">
-                    <i class="fa-solid fa-bars"></i>
-                </a>
-                <ul class="right hide-on-med-and-down">   
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Séries</a></li>
-                    <li><a href="#">Filmes</a></li>
-                    <li><a href="#">Novidades</a></li>
-                </ul>
-                <ul class="side-nav" id="menu-mobile">   
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Séries</a></li>
-                    <li><a href="#">Filmes</a></li>
-                    <li><a href="#">Novidades</a></li>
-                </ul>
-            </div>
-        </nav>
+        <div id="navbar">
+            <a class="logo active">TeleMovies</a>
+                <div id="links">
+                    <a href="#">HOME</a>
+                    <a href="#">FILMES</a>
+                    <a href="#">SÉRIES</a>
+                </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+        </div>
     </header>
 
     <main>
@@ -64,35 +56,35 @@
     <div class="carouselNews">
         <h2>Novidades</h2>
         <div class="owl-carousel owl-theme">
-            <div class="item">
-                <img class="box__movie" src="img/mini1.jpg" alt="" >
+            <div class="box__movie">
+                <img src="img/mini1.jpg" alt="Capa do filme Os Caras Malvados" >
             </div>
-            <div class="item">
-                <img class="box__movie" src="img/mini2.jpg" alt="" >
+            <div class="box__movie">
+                <img src="img/mini2.jpg" alt="Capa do filme Cidade Perdida" >
             </div>
-            <div class="item">
-                <img class="box__movie" src="img/mini3.jpg" alt="" >
+            <div class="box__movie">
+                <img src="img/mini3.jpg" alt="Capa do filme Gold" >
+            </div class="box__movie">
+            <div>
+                <img src="img/mini4.jpg" alt="Capa do filme Sonic 2" >
             </div>
-            <div class="item">
-                <img class="box__movie" src="img/mini4.jpg" alt="" >
+            <div class="box__movie">
+                <img src="img/mini5.jpg" alt="Capa do filme Crocodilos: A morte te espera" >
             </div>
-            <div class="item">
-                <img class="box__movie" src="img/mini5.jpg" alt="" >
+            <div class="box__movie">
+                <img src="img/mini6.jpg" alt="Capa do filme Homem Aranha Sem volta para casa" >
             </div>
-            <div class="item">
-                <img class="box__movie" src="img/mini6.jpg" alt="" >
+            <div class="box__movie">
+                <img src="img/mini7.jpg" alt="Capa do filme Red Crescer é uma fera" >
             </div>
-            <div class="item">
-                <img class="box__movie" src="img/mini7.jpg" alt="" >
+            <div class="box__movie">
+                <img src="img/mini8.jpg" alt="Capa do filme Jackass para sempre" >
             </div>
-            <div class="item">
-                <img class="box__movie" src="img/mini8.jpg" alt="" >
+            <div class="box__movie">
+                <img src="img/mini9.jpg" alt="Capa do filme Alerta Vermelho" >
             </div>
-            <div class="item">
-                <img class="box__movie" src="img/mini9.jpg" alt="" >
-            </div>
-            <div class="item">
-                <img class="box__movie" src="img/mini10.jpg" alt="" >
+            <div class="box__movie">
+                <img src="img/mini10.jpg" alt="Capa do filme Hotel transilvania" >
             </div>
         </div>
     </div>
@@ -100,20 +92,20 @@
     <div class="carouselOnHigh">
         <h2>EM ALTA</h2>
         <div class="owl-carousel owl-theme">
-            <div class="item">
-                <img class="box__movie" src="img/mini11.jpg" alt="" >
+            <div class="box__movie">
+                <img src="img/mini11.jpg" alt="Capa da série Peaky Blinders" >
             </div>
-            <div class="item">
-                <img class="box__movie" src="img/mini12.jpg" alt="" >
+            <div class="box__movie">
+                <img src="img/mini12.jpg" alt="Capa da série A Anatomia de Grey" >
             </div>
-            <div class="item">
-                <img class="box__movie" src="img/mini13.jpg" alt="" >
+            <div class="box__movie">
+                <img src="img/mini13.jpg" alt="Capa da série TWD" >
             </div>
-            <div class="item">
-                <img class="box__movie" src="img/mini14.jpg" alt="" >
+            <div class="box__movie">
+                <img src="img/mini14.jpg" alt="Capa do filme La abuela" >
             </div>
-            <div class="item">
-                <img class="box__movie" src="img/mini15.jpg" alt="" >
+            <div class="box__movie">
+                <img src="img/mini15.jpg" alt="Capa do filme Granizo" >
             </div>
         </div>
     </div>
@@ -128,14 +120,17 @@
     <script src="js/owl/jquery.min.js"></script>
     <script src="js/owl/owl.carousel.min.js"></script>
     <script src="js/owl/setup.js"></script>
-    <script src="js/nav.js"></script>
 
     <script>
-        $(function(){
-            $(".button-collapse").sideNav();
-        });
+        function myFunction() {
+          var x = document.getElementById("links");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
     </script>
 
-    
 </body>
 </html>

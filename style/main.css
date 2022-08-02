@@ -22,9 +22,10 @@ body {
 #navbar {
     width: 100%;
     background-color: var(--preto);
+    position: relative;
 }
 
-#navbar .brand-logo {
+#navbar .logo {
     color: var(--vermelho);
     font-family: 'Arial';
     font-size: 2.5rem;
@@ -32,27 +33,23 @@ body {
     margin-left: 1.25rem;
 }
 
-#navbar .navbar--wrapper {
-    position: relative;
-    width: 100%;
+#navbar #links {
+    margin: 1.125rem 1.563rem 0 0;
+    float: right;
 }
 
-#navbar ul{
-    list-style: none;
-    display: flex;
-}
-
-#navbar li{
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#navbar ul li a{
+#navbar #links a {
     text-decoration: none;
     color: white;
-    transition: all 0.4s;
+
+    padding-left: 1.563rem;
+}
+
+#navbar a.icon {
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 5px;
 }
 
 
@@ -64,7 +61,7 @@ body {
 
     height: 37.5rem;
     background-size: cover; 
-    
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -115,7 +112,7 @@ body {
 
 .carouselNews h2, .carouselOnHigh h2 {
     font-size: 1.563rem;
-    margin: 0.938rem 0 0.625rem 2.5rem;
+    margin: 1.563rem 0 0.625rem 2.5rem;
 
 }
 
