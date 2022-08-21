@@ -42,9 +42,18 @@
                 <h3 class="mainMovie__title">BATMAN</h3>
                 <p class="mainMovie__description">Bruce Wayne é um jovem bilionário da cidade de Gotham City, Nova Jersey, que também age secretamente como o vigilante noturno Batman após o assassinato dos seus pais.</p>
                 <div class="mainMovie__button">
-                    <button role="button" class="btn">
+                    <button role="button" href="#trailer" class="btn waves-effect waves-light modal-trigger">
                         <i class="fa-solid fa-play"></i>
                         ASSISTIR</button>
+
+                        <div id="trailer" class="modal">
+                            <a href="#" class=" modal-close waves-effect btn-flat waves-light">Fechar</a>
+                            <div class="modal-content">
+                                <h4>Batman</h4>
+                                <iframe src="https://www.youtube.com/embed/rsQEor4y2hg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+
                     <button role="button" class="btn">
                         <i class="fa-solid fa-circle-info"></i>
                         MAIS INFO</button>
@@ -117,9 +126,12 @@
     </footer>
 
     <script src="https://kit.fontawesome.com/e476f97d6a.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="js/owl/jquery.min.js"></script>
     <script src="js/owl/owl.carousel.min.js"></script>
     <script src="js/owl/setup.js"></script>
+    <script src="js/modal.js"></script>
+
 
     <script>
         function myFunction() {
